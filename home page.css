@@ -1,0 +1,901 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Anton&display=swap');
+
+/*font-family: "anton" for heading & font-family: "alata" for paragraph.*/
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*go to top btn design opening*/
+.topbtn a i{
+  font-size: 25px;
+  color: #fff;
+  background: black;
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px;
+    transition: all 0.5s ease;
+}
+
+.topbtn{
+  position: fixed;
+  left: 90%;
+  top: 85%;
+  transform: translate(-50%,-50%);
+}
+.topbtn:hover > a i{
+  background: #fff;
+  color: black;
+}
+
+/*go to top btn design closing*/
+
+/*side bar design opening*/
+.sidebarMain{
+  width: 260px;
+  left: -260px;
+  position: fixed;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+  .sidebarMain ul{
+    background: #99aeb4;
+  }
+   .sidebarMain .headerTitle{
+     background: #2b2b2b;
+     color: #fff;
+     padding: 15px 10px;
+     font-family: anton;
+     font-size: 30px;
+     text-align: center;
+     font-weight: 500;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+   }
+  .sidebarMain ul li{
+    list-style: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid #ddd;
+    line-height: 55px;
+    transition: all 0.5s ease;
+  }
+  .sidebarMain ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: alata;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px;
+    transition: all 0.5s ease;
+  }
+  .sidebarMain ul li a i{
+    font-size: 25px;
+    margin-right: 15px;
+    color: #ed2a58;
+  }
+  .sidebarMain ul li:hover > a{
+    padding: 35px;
+  }
+  .sidebarMain li:hover{
+    background: #2b2b2b;
+  }
+  
+  #BtnMenu{
+    display: none;
+  }
+  label #barBtn{
+    font-size: 25px;
+    background: #2b2b2b;
+    color: #fff;
+    padding: 8px;
+    border-radius: 3px;
+    margin-left: 15px;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+    z-index: 1111;
+    position: fixed;
+    cursor: pointer;
+  }
+  label #barBtn:hover{
+    color: #ed2a58;
+  }
+  label #CancelBtn{
+    font-size: 25px;
+    color: #2b2b2b;
+    padding: 5px 7px;
+    border-radius: 3px;
+    margin-left: -210px;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+    z-index: 1111;
+    position: fixed;
+    background: #fff;
+    margin-left: 210px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  label #CancelBtn:hover{
+    color: #ed2a58;
+  }
+  
+  #BtnMenu:checked~ .sidebarMain{
+  left: 0px;
+  }
+  #BtnMenu:checked~ label #barBtn{
+    margin-left: 200px;
+    opacity: 0;
+  }
+  #BtnMenu:checked~ label #CancelBtn{
+    margin-left: 210px;
+    opacity: 1;
+  }
+  #BtnMenu:checked~ .headerSection{
+    margin-left: 260px;
+  }
+  .headerSection{
+    transition: all 0.5s ease;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/blogpost.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+/*side bar design closing*/
+
+/*logo design opening*/
+.logo{
+  width: 160px;
+  font-family: anton;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.5px;
+  margin-top: 23px;
+  margin-left: 80px;
+  color: #fff;
+  position: absolute;
+}
+.logo span{
+  color: #ed2a58;
+}
+/*logo design closing*/
+
+/*heading description design opening*/
+.headingdesc{
+  width: 650px;
+  margin-left: 60px;
+  margin-top: 80px;
+  color: #fff;
+}
+.headingdesc h1{
+  font-family: anton;
+  font-size: 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.headingdesc p{
+  font-family: alata;
+  font-weight: 380;
+  font-size: 20px;
+  text-align: justify;
+}
+/*heading description design closing*/
+
+
+/*navigation bar design opening*/
+.navig{
+  margin-top: 27px;
+}
+.navig .navlist{
+  list-style: none;
+  float: right;
+}
+.navig .navlist:last-child{
+  margin-right: 10px;
+}
+.navig .navlist li{
+  display: block;
+  float: left;
+
+}
+.navig .navlist li a{
+  text-decoration: none;
+  font-family: anton;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.navig .navlist li a:hover{
+  background: #ed2a58;
+}
+/*navigation bar design closing*/
+
+
+/*search box design opening*/
+.searchBOx{
+  background: #fff;
+  width: 250px;
+  padding: 6px 10px;
+  border-radius: 15px;
+  margin-left: 270px;
+}
+.searchBOx input{
+  padding: 3px;
+  font-size: 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  padding-left: 10px;
+}
+.searchBOx a{
+  margin-left: 3px;
+  color: #ed2a58;
+  cursor: pointer;
+  font-size: 15px;
+}
+/*search box design closing*/
+
+
+/*web social icons design opening*/
+.webSocialicons{
+  float: left;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+.webSocialicons ul{
+  list-style: none;
+}
+.webSocialicons .iconList li{
+  margin-bottom: 2px;
+}
+.webSocialicons .iconList li i{
+  color: #fff;
+  font-size: 23px;
+  padding: 15px 18px;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+#facebook{
+  background: #3b5998;
+}
+#facebook:hover{
+  background: #fff;
+  color: #2b2b2b;
+  padding-left: 50px;
+}
+#twitter{
+  background: #00acee;
+  padding: 15px 14px;
+}
+#twitter:hover{
+  background: #fff;
+  color: #2b2b2b;
+    padding-left: 50px;
+}
+#linkedin{
+   background: #0e76a8;
+  padding: 15px 15px;
+}
+#linkedin:hover{
+  background: #fff;
+  color: #2b2b2b;
+    padding-left: 50px;
+}
+#instagram{
+    background: #ff5200;
+  padding: 15px 15px;
+}
+#instagram:hover{
+  background: #fff;
+  color: #2b2b2b;
+    padding-left: 50px;
+}
+#googlePlus{
+   background: #db4a39;
+  padding: 15px 11px;
+}
+#googlePlus:hover{
+  background: #fff;
+  color: #2b2b2b;
+    padding-left: 50px;
+}
+#github{
+     background: #2b2b2b;
+    padding: 15px 14px;
+}
+#github:hover{
+  background: #fff;
+  color: #2b2b2b;
+    padding-left: 50px;
+}
+/*web social icons design closing*/
+
+/*feedback btn design opening*/
+.feedbackbtn{
+  margin-left: 50px;
+  margin-top: 20px;
+  padding-bottom: 100px;
+  width: 110px;
+}
+.feedbackbtn a{
+  font-family: anton;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  display:  inline block;
+}
+.feedbackbtn:hover > a{
+  background: #ed2a58;
+}
+
+/*feedback btn design closing*/
+
+/*service section design opening*/
+
+.ourServicesMain{
+  padding-top: 30px;
+  background: #ddd;
+  height: 585px;
+}
+
+
+.singleServiceMain{
+  width: 250px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px;
+  text-align: center;
+  float: left;
+  overflow: hidden;
+  height: 350px;
+  margin-right: 25px;
+  transition: all 0.5s ease;
+  margin-top: 170px;
+  margin-left: 20px;
+}
+.serviceIcon i{
+  font-size: 50px;
+  color: #ed2a58;
+  padding: 20px;
+  margin-left: 10px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  transition all 0.5s ease;
+}
+.serviceDesc{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 40px;
+  line-height: 25px;
+}
+.serviceDesc h1{
+  font-family: anton;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 50px;
+  transition: all 0.5s ease;
+}
+.serviceDesc p{
+  font-family: alata;
+  font-size: 18px;
+  text-align: center;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  transition: all 0.5s ease;
+}
+
+.singleServiceMain:hover > .serviceIcon i{
+  color: #fff;
+}
+.singleServiceMain:hover{
+  background: #ed2a58;
+}
+.singleServiceMain:hover > .serviceDesc h1{
+  color: #fff;
+}
+.singleServiceMain:hover > .serviceDesc p{
+  color: #fff;
+}
+.mainserviceHead{
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  overflow: hidden;
+}
+.mainserviceHead #head{
+  font-family: anton;
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  
+}
+.mainserviceHead #head:after{
+  position: absolute;
+  content: " ";
+  width: 90px;
+  bottom: 0px;
+  border-bottom: 5px solid #ed2a58;
+  height: 2px;
+  left: 51%;
+  transform: translate(-50%);
+}
+.mainserviceHead p{
+  font-family: alata;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/*service section design closing*/
+
+/*packages section design opening*/
+.bestPackagesSectionMain{
+  padding-top: 30px;
+  height: 585px;
+  background: #fff;
+}
+.singlepackagesBoxWrapping{
+  overflow: hidden;
+  margin-top: 190px;
+  margin-bottom: 50px;
+  padding: 5px;
+}
+.singlepackagesBOx{
+  width: 280px;
+  border-radius: 4px;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px black;
+  height: 510px;
+  float: left;
+  margin-right: 25px;
+  transition: all 0.5s ease;
+}
+.singlepackagesBOx:hover{
+  background: #ed2a58;
+}
+.singlepackagesBOx:hover > .headingpackage #ph1{
+  color: #fff;
+}
+.singlepackagesBOx:hover > .headingpackage #ph{
+  color: #fff;
+} 
+.singlepackagesBOx:hover > .listview li #iconpack{
+  color: #fff;
+}
+.singlepackagesBOx:hover > .listview li{
+  color: #fff;
+}
+
+.singlepackagesBOx:first-child{
+  margin-left: 20px;
+}
+.singlepackagesBOx:last-child{
+  margin-right: 0px;
+}
+.headingpackage{
+  text-align: center;
+}
+.headingpackage #ph1{
+  font-family: anton;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 550;
+  color: #ed2a58;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+
+.headingpackage #ph{
+  font-family: alata;
+  font-size: 40px;
+  font-weight: 650;
+  color: #ed2a58;
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
+}
+.headingpackage #ph #month{
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.listview{
+  list-style: none;
+}
+.listview li #iconpack{
+ color: #ed2a58; 
+ margin-right: 5px;
+ font-size: 23px;
+ margin-right: 10px;
+ margin-left: 10px;
+ transition: all 0.5s ease;
+}
+
+.listview li{
+  font-family: alata;
+  font-size: 23px;
+  font-weight: 400;
+  color: #2b2b2b;
+  line-height: 40px;
+  transition: all 0.5s ease;
+}
+#btnpackg{
+  margin-top: 30px;
+  margin-bottom: 35px;
+  margin-left: 70px;
+  outline: none;
+  border: none;
+}
+#btnpackg #link{
+  font-family: anton;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  padding: 5px 40px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  background: #ed2a58;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  border: none;
+  outline: none;
+}
+#btnpackg:hover > #link{
+  background: #fff;
+  color: #2b2b2b;
+}
+
+/*packages section design closing*/
+
+/*our team section design opening*/
+.meetOUrteamMain{
+  padding-top: 30px;
+  height: 715px;
+  margin-top: 210px;
+  background: #f7f7f7;
+  padding-bottom: 30px;
+}
+
+.singleTeamboxWrapper{
+  overflow: hidden;
+  margin-top: 200px;
+  padding: 10px;
+}
+
+.singleTeamBox{
+  width: 300px;
+  background: #fff;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.5s ease;
+  box-shadow: 0px 0px 10px 0px;
+  float: left;
+  margin-left: 20px;
+}
+
+.teamImg{
+  width: 300px;
+  overflow: hidden;
+  height: 300px;
+}
+.teamImg img{
+  width: 100%;
+  height: 100%;
+}
+
+.teamdesc #teamName{
+  font-family: anton;
+  font-size: 35px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #2b2b2b;
+  margin-top: 10px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.teamdesc #teamDesignation{
+  font-family: alata;
+  font-size: 20px;
+  font-weight: 450;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 7px;
+  color: #888;
+  margin-left: 45px;
+  transition: all 0.5s ease;
+}
+
+.socialTeam{
+
+  padding-bottom: 25px;
+}
+.socialteamwrapper{
+    overflow: hidden;
+  width: 100%;
+  text-align: center;
+  margin-left: 28px;
+  padding: 10px;
+}
+.socialList{
+  list-style: none;
+}
+.socialList li a i{
+  text-decoration: none;
+  font-size: 26px;
+  display: block;
+  float: left;
+  padding: 10px;
+  width: 26px;
+  height: 26px;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 10px;
+}
+#facebook1{
+  background: #3b5998;
+  transition: all 0.5s ease;
+}
+#facebook1:hover{
+  background: #fff;
+  color: #2b2b2b;
+  padding: 15px;
+  font-size: 30px;
+}
+
+#twitter1{
+  background: #00acee;
+  transition: all 0.5s ease;
+}
+#twitter1:hover{
+  background: #fff;
+  color: #2b2b2b;
+  padding: 15px;
+  font-size: 30px;
+}
+#linkedin1{
+  background: #0e76a8;
+  transition: all 0.5s ease;
+}
+#linkedin1:hover{
+  background: #fff;
+  color: #2b2b2b;
+  padding: 15px;
+  font-size: 30px;
+}
+#instagram1{
+  background: #ff5200;
+  transition: all 0.5s ease;
+}
+#instagram1:hover{
+  background: #fff;
+  color: #2b2b2b;
+  padding: 15px;
+  font-size: 30px;
+}
+.socialList li a:last-child{
+  margin-right: 0px;
+}
+.singleTeamBox:hover{
+  background: #ed2a58;
+}
+.singleTeamBox:hover > .teamdesc #teamName{
+  color: #fff;
+}
+.singleTeamBox:hover > .teamdesc #teamDesignation{
+  color: #fff;
+}
+
+/*our team section design closing*/
+
+/*successfull projects design opening*/
+.successprojectsMain{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/bg10.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.singleprojects{
+  width: 200px;
+  background: transparent;
+  float: left;
+  margin-left: 30px;
+}
+.singleprojects:last-child{
+  margin-right: 5px;
+}
+.singleprojectsWrapper{
+  overflow: hidden;
+  padding: 10px;
+}
+.singleprojects .projectIcon i{
+  font-size: 75px;
+  color: #2b2b2b;
+  margin-left: 60px;
+  padding-top: 30px;
+  color: #fff;
+  font-weight: 400;
+}
+.singleprojects .projectDesc{
+  width: 100%;
+  text-align: center;
+}
+.singleprojects .projectDesc h3{
+  font-family: anton;
+  font-size: 50px;
+  font-weight: 450;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.singleprojects .projectDesc .projecth1{
+  font-family: anton;
+  font-size: 30px;
+  font-weight: 450;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  color: #fff;
+}
+/*successfull projects design closing*/
+
+/*our target section design opening*/
+.ourTargetMain{
+  padding-top: 40px;
+  height: 750px;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/bg33.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.singleBoxTargetwrapper{
+  overflow: hidden;
+  padding-top: 10px;
+  height: 500px;
+  margin-top: 180px;
+  padding-left: 70px;
+  padding-bottom: 50px;
+}
+.TargetSinglebox{
+  width: 230px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  float: left;
+  margin-right: 30px;
+  margin-top: 25px;
+  height: 215px;
+}
+
+.TargetSinglebox:hover{
+  background: #ed2a58;
+}
+.TargetSinglebox:hover > .targetIcon i{
+  color: #fff;
+}
+.TargetSinglebox:hover > .targetDescription .targetHeading{
+  color: #fff;
+}
+.TargetSinglebox:hover > .targetDescription .targetPara{
+  color: #fff;
+}
+.TargetSinglebox .targetIcon{
+  width: 65px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  margin-left: 87px;
+  text-align: center;
+}
+.TargetSinglebox .targetIcon i{
+  font-size: 65px;
+  text-align: center;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.TargetSinglebox .targetDescription{
+  text-align: center;
+}
+.TargetSinglebox .targetDescription .targetHeading{
+  font-family: anton;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.TargetSinglebox .targetDescription .targetPara{
+  font-family: alata;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+/*our target section design closing*/
+
+
+
+/*address section designing opening*/
+.addressMain{
+  padding: 15px;
+  height: 160px;
+  margin-top: 30px;
+  background: #ed2a58;
+}
+.addressMain .leftsideaddress{
+  margin-top: 30px;
+  text-align: center;
+}
+.addressMain .leftsideaddress #ad1{
+  font-family: alata;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+}
+/*address section designing closing*/
+
+/*footer design opening*/
+.footer{
+  background: #2b2b2b;
+}
+.footer .footerdes{
+  font-family: alata;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+/*footer design closing*/

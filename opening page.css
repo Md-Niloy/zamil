@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Anton&display=swap');
+
+/*font-family: "anton" for heading & font-family: "alata" for paragraph.*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+/*logo design opening*/
+.logo{
+  width: 160px;
+  font-family: anton;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.5px;
+  margin-top: 15px;
+  margin-left: 20px;
+  color: #fff;
+}
+.logo span{
+  color: #ed2a58;
+}
+/*logo design closing*/
+
+/*search box design opening*/
+.searchBOx{
+  background: #fff;
+  width: 250px;
+  padding: 6px 10px;
+  border-radius: 15px;
+  float: right;
+}
+.searchBOx input{
+  padding: 3px;
+  font-size: 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  padding-left: 10px;
+}
+.searchBOx a{
+  margin-left: 3px;
+  color: #ed2a58;
+  cursor: pointer;
+  font-size: 15px;
+}
+/*search box design closing*/
+
+/*info btn design opening*/
+.infoBtn{
+  float: left;
+  margin-top: 5px;
+}
+.infoBtn a{
+  font-family: anton; 
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-weight: 300;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.infoBtn a:hover{
+   background: #ed2a58;
+}
+/*info btn design closing*/
+
+/*right content opening*/
+.rightContent{
+  width: 350px;
+  overflow: hidden;
+  padding: 3px;
+  float: right;
+  margin-top: -40px;
+  margin-right: 20px;
+}
+/*right content closing*/
+/*main heading opening*/
+.mainHEading{
+  width: 600px;
+  font-family: anton;
+  font-size: 35px;
+  color: #fff;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.mainHEading h1{
+  font-weight: 400;
+}
+/*main heading closing*/
+
+/*btns design opening*/
+#btn1{
+  color: #fff;
+  font-family: anton;
+  font-size: 18;
+  letter-spacing: 2px;font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 3px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-right: 10px;
+}
+#btn1:hover{
+  background: #ed2a58; 
+}
+
+#btn2{
+  color: #fff;
+  font-family: anton;
+  font-size: 18px;
+  letter-spacing: 2px;font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 3px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-radius: 3px;
+}
+#btn2:hover{
+  background: #ed2a58; 
+} 
+.btns{
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%,-50%);
+}
+/*btns design closing*/
+
+/*web social icons design opening*/
+.webSocialicons{
+  float: left;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+.webSocialicons ul{
+  list-style: none;
+}
+.webSocialicons .iconList li{
+  margin-bottom: 2px;
+}
+.webSocialicons .iconList li i{
+  color: #fff;
+  font-size: 23px;
+  padding: 15px 18px;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+#facebook{
+  background: #3b5998;
+}
+#facebook:hover{
+  background: #fff;
+  color: #2b2b2b;
+  padding-left: 50px;
+}
+#twitter{
+  background: #00acee;
+  padding: 15px 14px;
+}
+#twitter:hover{
+  background: #fff;
+  color: #2b2b2b;
+    padding-left: 50px;
+}
+#linkedin{
+   background: #0e76a8;
+  padding: 15px 15px;
+}
+#linkedin:hover{
+  background: #fff;
+  color: #2b2b2b;
+    padding-left: 50px;
+}
+#instagram{
+    background: #ff5200;
+  padding: 15px 15px;
+}
+#instagram:hover{
+  background: #fff;
+  color: #2b2b2b;
+    padding-left: 50px;
+}
+#googlePlus{
+   background: #db4a39;
+  padding: 15px 11px;
+}
+#googlePlus:hover{
+  background: #fff;
+  color: #2b2b2b;
+    padding-left: 50px;
+}
+#github{
+     background: #2b2b2b;
+    padding: 15px 14px;
+}
+#github:hover{
+  background: #fff;
+  color: #2b2b2b;
+    padding-left: 50px;
+}
+/*web social icons design closing*/
+
+
